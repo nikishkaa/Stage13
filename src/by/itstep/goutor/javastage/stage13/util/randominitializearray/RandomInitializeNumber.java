@@ -14,7 +14,7 @@ public class RandomInitializeNumber {
         int[] numbers = new int[10];
 
         for (int i = 0; i < numbers.length; i++) {
-            numbers[i] = RANDOM.nextInt(100) + 1;
+            numbers[i] = RANDOM.nextInt(100);
         }
 
         return numbers;
