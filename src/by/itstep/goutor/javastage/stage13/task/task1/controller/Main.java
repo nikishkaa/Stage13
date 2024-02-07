@@ -1,7 +1,9 @@
 package by.itstep.goutor.javastage.stage13.task.task1.controller;
 
 import by.itstep.goutor.javastage.stage13.task.task1.model.logic.MaxNumLogic;
+import by.itstep.goutor.javastage.stage13.task.task1.model.logic.MinNumLogic;
 import by.itstep.goutor.javastage.stage13.task.task1.util.MaxNumUI;
+import by.itstep.goutor.javastage.stage13.task.task1.util.MinNumUI;
 import by.itstep.goutor.javastage.stage13.util.randominitializearray.RandomInitializeNumber;
 import by.itstep.goutor.javastage.stage13.util.view.Printer;
 
@@ -13,11 +15,13 @@ public class Main {
         int[] numbers = RandomInitializeNumber.getRandomArrayNumber();
 
         int maxNum = MaxNumLogic.getMaxNumber(numbers);
+        int minNum = MinNumLogic.getMinNumLogic(numbers);
 
 
         Printer.print("Original array of numbers: " + Arrays.toString(numbers));
 
         Printer.print(MaxNumUI.getMaxNUmberUI(maxNum));
+        Printer.print(MinNumUI.getMinNumUI(minNum));
 
 
     }
