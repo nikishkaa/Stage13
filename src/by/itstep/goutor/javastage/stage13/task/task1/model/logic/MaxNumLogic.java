@@ -1,6 +1,6 @@
 package by.itstep.goutor.javastage.stage13.task.task1.model.logic;
 
-public class NumLogic {
+public class MaxNumLogic {
     public static final int ERROR = -1;
 
     public static int getMaxNumber(int[] numbers) {
@@ -21,8 +21,8 @@ public class NumLogic {
             }
         }
 
-
         return maxNum;
     }
+
 
 }
