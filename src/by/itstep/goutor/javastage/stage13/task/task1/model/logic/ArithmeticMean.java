@@ -14,13 +14,13 @@ public class ArithmeticMean {
 
         double arithmeticMeans = 0;
 
-        int i = 0;
+        int count = 0;
 
-        for (; i < numbers.length; i++) {
-            arithmeticMeans += numbers[i];
+        for (; count < numbers.length; count++) {
+            arithmeticMeans += numbers[count];
         }
 
-        arithmeticMeans = arithmeticMeans / i;
+        arithmeticMeans = arithmeticMeans / count;
 
         return arithmeticMeans;
     }
