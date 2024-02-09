@@ -1,8 +1,8 @@
-package by.itstep.goutor.javastage.stage13.task.Task3.controller;
+package by.itstep.goutor.javastage.stage13.task.task3.controller;
 
-import by.itstep.goutor.javastage.stage13.task.Task3.model.logic.NumbersLogic;
-import by.itstep.goutor.javastage.stage13.task.Task3.util.TestArray;
-import by.itstep.goutor.javastage.stage13.task.Task3.util.UserUI;
+import by.itstep.goutor.javastage.stage13.task.task3.model.logic.NumbersLogic;
+import by.itstep.goutor.javastage.stage13.task.task3.util.TestArray;
+import by.itstep.goutor.javastage.stage13.task.task3.util.UserUI;
 import by.itstep.goutor.javastage.stage13.util.view.Printer;
 
 

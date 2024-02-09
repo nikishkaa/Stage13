@@ -1,4 +1,4 @@
-package by.itstep.goutor.javastage.stage13.task.Task3.model.logic;
+package by.itstep.goutor.javastage.stage13.task.task3.model.logic;
 
 public class NumbersLogic {
     public static boolean getOrderedNumbers(int[] numbers) {

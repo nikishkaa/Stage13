@@ -1,4 +1,4 @@
-package by.itstep.goutor.javastage.stage13.task.Task3.util;
+package by.itstep.goutor.javastage.stage13.task.task3.util;
 
 import by.itstep.goutor.javastage.stage13.util.view.Printer;
 
