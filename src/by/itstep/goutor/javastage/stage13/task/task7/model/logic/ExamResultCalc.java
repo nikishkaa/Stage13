@@ -43,15 +43,16 @@ public class ExamResultCalc {
         five = five / numbers.length * 100;
 
 
-        int count = 0;
+        //int count = 0;
 
-        examResult[count++] = zero;
-        examResult[count++] = one;
-        examResult[count++] = two;
-        examResult[count++] = three;
-        examResult[count++] = four;
-        examResult[count] = five;
+        //examResult[count++] = zero;
+        //examResult[count++] = one;
+        //examResult[count++] = two;
+        //examResult[count++] = three;
+        //examResult[count++] = four;
+        //examResult[count] = five;
 
+examResult=examResult[]{zero, one, two, three,four, five}
 
         return examResult;
     }
