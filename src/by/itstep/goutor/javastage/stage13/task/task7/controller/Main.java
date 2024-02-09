@@ -1,10 +1,9 @@
 package by.itstep.goutor.javastage.stage13.task.task7.controller;
 
 import by.itstep.goutor.javastage.stage13.task.task7.model.logic.ExamResultCalc;
+import by.itstep.goutor.javastage.stage13.task.task7.util.ExamResultUI;
+import by.itstep.goutor.javastage.stage13.task.task7.util.PrintStringBuilder;
 import by.itstep.goutor.javastage.stage13.task.task7.util.TestArray;
-import by.itstep.goutor.javastage.stage13.util.view.Printer;
-
-import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
@@ -14,6 +13,6 @@ public class Main {
         double[] examResult = ExamResultCalc.getExamResult(numbers);
 
 
-        Printer.print(Arrays.toString(examResult));
+        PrintStringBuilder.print(ExamResultUI.getExamResultUI(examResult));
     }
 }
