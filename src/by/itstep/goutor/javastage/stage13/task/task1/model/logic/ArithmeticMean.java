@@ -5,8 +5,9 @@ public class ArithmeticMean {
 
     public static double getArithmeticMeans(int[] numbers) {
 
-        for (int i = 0; i < numbers.length; i++) {
-            if (numbers[i] < 0) {
+
+        for (int number : numbers) {
+            if (number < 0) {
                 return ERROR;
             }
         }

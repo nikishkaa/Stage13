@@ -1,55 +1,56 @@
 package by.itstep.goutor.javastage.stage13.task.task7.model.logic;
 
 public class ExamResultCalc {
-    public static double ZERO = 0;
-    public static double ONE = 0;
-    public static double TWO = 0;
-    public static double THREE = 0;
-    public static double FOUR = 0;
-    public static double FIVE = 0;
+
 
     public static double[] getExamResult(int[] numbers) {
 
-        for (int i = 0; i < numbers.length; i++) {
+        for (int number : numbers) {
 
-            if (numbers[i] < 0 || numbers[i] > 5) {
+            if (number < 0 || number > 5) {
                 return new double[0];
             }
 
         }
 
+        double zero = 0;
+        double one = 0;
+        double two = 0;
+        double three = 0;
+        double four = 0;
+        double five = 0;
 
-        for (int i = 0; i < numbers.length; i++) {
-            switch (numbers[i]) {
+        for (int number : numbers) {
+            switch (number) {
                 case 0:
-                    ZERO++;
+                    zero++;
                     break;
                 case 1:
-                    ONE++;
+                    one++;
                     break;
                 case 2:
-                    TWO++;
+                    two++;
                     break;
                 case 3:
-                    THREE++;
+                    three++;
                     break;
                 case 4:
-                    FOUR++;
+                    four++;
                     break;
                 case 5:
-                    FIVE++;
+                    five++;
                     break;
             }
         }
 
-        ZERO = (ZERO / numbers.length) * 100;
-        ONE = (ONE / numbers.length) * 100;
-        TWO = (TWO / numbers.length) * 100;
-        THREE = (THREE / numbers.length) * 100;
-        FOUR = (FOUR / numbers.length) * 100;
-        FIVE = (FIVE / numbers.length) * 100;
+        zero = (zero / numbers.length) * 100;
+        one = (one / numbers.length) * 100;
+        two = (two / numbers.length) * 100;
+        three = (three / numbers.length) * 100;
+        four = (four / numbers.length) * 100;
+        five = (five / numbers.length) * 100;
 
 
-        return new double[]{ZERO, ONE, TWO, THREE, FOUR, FIVE};
+        return new double[]{zero, one, two, three, four, five};
     }
 }
