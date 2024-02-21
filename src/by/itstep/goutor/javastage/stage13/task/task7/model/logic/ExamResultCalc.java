@@ -1,13 +1,20 @@
 package by.itstep.goutor.javastage.stage13.task.task7.model.logic;
 
 public class ExamResultCalc {
+    public static final int MIN_MARK = 0;
+    public static final int MAX_MARK = 5;
 
 
     public static double[] getExamResult(int[] numbers) {
 
+
+        if (numbers == null || numbers.length == 0) {
+            return new double[0];
+        }
+
         for (int number : numbers) {
 
-            if (number < 0 || number > 5) {
+            if (number < MIN_MARK || number > MAX_MARK) {
                 return new double[0];
             }
 
