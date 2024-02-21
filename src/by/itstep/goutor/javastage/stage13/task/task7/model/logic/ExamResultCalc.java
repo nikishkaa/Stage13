@@ -1,5 +1,6 @@
 package by.itstep.goutor.javastage.stage13.task.task7.model.logic;
 
+
 public class ExamResultCalc {
     public static final int MIN_MARK = 0;
     public static final int MAX_MARK = 5;
@@ -7,10 +8,10 @@ public class ExamResultCalc {
 
     public static double[] getExamResult(int[] numbers) {
 
-
         if (numbers == null || numbers.length == 0) {
             return new double[0];
         }
+
 
         for (int number : numbers) {
 
@@ -20,44 +21,40 @@ public class ExamResultCalc {
 
         }
 
-        double zero = 0;
-        double one = 0;
-        double two = 0;
-        double three = 0;
-        double four = 0;
-        double five = 0;
 
-        for (int number : numbers) {
-            switch (number) {
-                case 0:
-                    zero++;
-                    break;
-                case 1:
-                    one++;
-                    break;
-                case 2:
-                    two++;
-                    break;
-                case 3:
-                    three++;
-                    break;
-                case 4:
-                    four++;
-                    break;
-                case 5:
-                    five++;
-                    break;
-            }
+        double[] examResult = calculateCountMark(numbers);
+
+
+        for (int i = 0; i < examResult.length; i++) {
+            examResult[i] = (examResult[i] / numbers.length) * 100;
         }
 
-        zero = (zero / numbers.length) * 100;
-        one = (one / numbers.length) * 100;
-        two = (two / numbers.length) * 100;
-        three = (three / numbers.length) * 100;
-        four = (four / numbers.length) * 100;
-        five = (five / numbers.length) * 100;
+
+        return examResult;
+    }
 
 
-        return new double[]{zero, one, two, three, four, five};
+    private static double[] calculateCountMark(int[] numbers) {
+
+        double[] examMarkCount = new double[6];
+
+        for (int number : numbers) {
+            if (number == 0) {
+                examMarkCount[0]++;
+            } else if (number == 1) {
+                examMarkCount[1]++;
+            } else if (number == 2) {
+                examMarkCount[2]++;
+            } else if (number == 3) {
+                examMarkCount[3]++;
+            } else if (number == 4) {
+                examMarkCount[4]++;
+            } else
+                examMarkCount[5]++;
+
+
+        }
+
+        return examMarkCount;
     }
 }
