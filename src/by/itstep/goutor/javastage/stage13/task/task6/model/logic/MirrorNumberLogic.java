@@ -3,7 +3,7 @@ package by.itstep.goutor.javastage.stage13.task.task6.model.logic;
 public class MirrorNumberLogic {
     public static boolean getMirrorNumberLogic(int[] numbers) {
 
-        if (numbers.length % 2 != 1) {
+        if (numbers == null || numbers.length == 0) {
             return false;
         }
 

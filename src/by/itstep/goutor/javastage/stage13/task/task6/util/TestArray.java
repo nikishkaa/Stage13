@@ -14,7 +14,7 @@ public class TestArray {
 
     public static int[] getUserArrayNumber() {
 
-        int[] numbers = new int[5];
+        int[] numbers = new int[6];
 
 
         for (int i = 0; i < numbers.length; i++) {

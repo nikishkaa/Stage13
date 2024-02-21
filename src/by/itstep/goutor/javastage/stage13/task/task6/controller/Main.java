@@ -11,8 +11,7 @@ public class Main {
 
         boolean mirror = MirrorNumberLogic.getMirrorNumberLogic(numbers);
 
+
         PrintStringBuilder.print(MirrorArraysUI.getMirrorNumbersUI(mirror));
-
-
     }
 }
